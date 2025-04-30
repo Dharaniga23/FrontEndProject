@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <!-- Top Offer Bar -->
+    <div class="top-offer">
+        <div class="marquee">
+        Our best offer Ever!! Summer Special - Get 3 Courses at 22499/- only 
+        <a href="#">Read More</a>
+    </div>
+    </div>
+
+    <!-- Top Contact Bar -->
+    <div class="top-contact">
+        <span>Email: rjtechnology@gmail.com</span>
+        <span>Contact: +91 9025741101</span>
+        <div class="social-icons">
+            <a href="#"><img src="images/facebook-icon.png" alt="Facebook"></a>
+            <a href="#"><img src="images/twitter-icon.png" alt="Twitter"></a>
+            <a href="#"><img src="images/instagram-icon.png" alt="Instagram"></a>
+            <a href="#"><img src="images/linkedin-icon.png" alt="LinkedIn"></a>
+        </div>
+    </div>
+    
+    
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/graduation-cap-icon.png" alt="Logo" class="logo-icon">
+            <span class="name">RJ Technology</span>
+        </div>
+        <ul class="nav-links" id="nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li class="dropdown">
+                <a href="#" id="courses-toggle">Courses</a>
+                <ul class="dropdown-menu" id="courses-menu">
+                  <li><a href="#">Front End</a></li>
+                  <li><a href="#">Backend</a></li>
+                </ul>
+              </li>
+          <li><a href="#">Online Training</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+        <!--enquiry-->
+        <div class="enquiry-container">
+            <button class="enquiry-button">Enquiry</button>
+    
+            <div class="enquiry-form">
+                <p class="para">Request for Class Room and Online Training Quotation</p><br>
+                <div class="co"><img width="30px" src="images/home-icon.png"> Classroom  <img width="20px" src="images/laptop-icon.png">Online</div><br>
+                <form>
+                    <input type="text" placeholder="Enter your Name" required>
+                    <input type="email" placeholder="Enter your Email" required>
+                    <input type="tel" placeholder="Enter your Phone Number" required>
+                    <select required>
+                        <option value="">Select Course</option>
+                        <option value="web">HTML5</option>
+                        <option value="app">CSS</option>
+                        <option value="data">Javascript</option>
+                        <option value="data">React Js</option>
+                    </select>
+                    <button type="submit" class="submit-button">Submit</button>
+                </form>
+            </div>
+        </div>
+    
+    </nav>
+
+    <!--apply online-->
+    <div id="enquiry-popup" class="popup-overlay">
+        <div class="popup-box">
+          <span class="close-btn" id="close-popup">&times;</span>
+          <h2>Quick Enquiry</h2>
+          <form>
+            <label>Name*</label>
+            <input type="text" required><br>
+            <label>10 Digit Mobile No*</label>
+            <input type="tel" pattern="[0-9]{10}" required><br>
+            <label>Email*</label>
+            <input type="email" required><br>
+            <textarea placeholder="Message..."></textarea><br>
+            <button type="submit" class="submit-button">I'm Interested Tell me More</button>
+          </form>
+        </div>
+      </div>
+      
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>RJ Technologies</h1>
+            <h3>Best Online & Classroom Training Institute</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum quas ullam natus, repudiandae aliquid asperiores suscipit minus quasi delectus perspiciatis, facere dolore? Maiores veniam est quae repellendus, quis natus facere dolore?</p>
+            <button class="apply-button">Apply Online</button>
+        </div>
+    </section>
+
+    <section class="features">
+        <h2 class="features-title">Key Features</h2>
+        <p class="features-description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque repudiandae laudantium natus voluptate ipsa quas? Voluptas ab maxime cumque vitae.
+        </p>
+      
+        <div class="features-container">
+          <div class="feature-box">
+            <div class="feature-icon">🧑‍🏫</div>
+            <h3>Expert Faculty</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, impedit?</p>
+          </div>
+          <div class="feature-box">
+            <div class="feature-icon">⏰</div>
+            <h3>Well Equipped Labs</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, impedit?</p>
+          </div>
+          <div class="feature-box">
+            <div class="feature-icon">🏫</div>
+            <h3>Quality Education</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, impedit?</p>
+          </div>
+          <div class="feature-box">
+            <div class="feature-icon">📞</div>
+            <h3>24 * 7 Access</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, impedit?</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="courses">
+        <h2 class="section-title">Our Courses</h2>
+        <p class="section-description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque repudiandae laudantium natus voluptate ipsa quas? Voluptas ab maxime cumque vitae.
+        </p>
+      
+        <div class="course-cards">
+          <!-- Card 1 -->
+          <div class="course-card">
+            <div class="course-header">Full Stack Development</div>
+            <h3>Cras ultricies lacus consectetur, consectetur</h3>
+            <div class="stars">⭐ ⭐ ⭐ ⭐</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, fugiat.consectetur adipisicing elit. Nulla, fugiat.</p>
+            <a href="#" class="apply-btn">Apply Online</a>
+          </div>
+      
+          <!-- Card 2 -->
+          <div class="course-card">
+            <div class="course-header">Front End Development</div>
+            <h3>Cras ultricies lacus consectetur, consectetur</h3>
+            <div class="stars">⭐ ⭐ ⭐ ⭐</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, fugiat.consectetur adipisicing elit. Nulla, fugiat.</p>
+            <a href="#" class="apply-btn">Apply Online</a>
+          </div>
+      
+          <!-- Card 3 -->
+          <div class="course-card">
+            <div class="course-header">Backend Development</div>
+            <h3>Cras ultricies lacus consectetur, consectetur</h3>
+            <div class="stars">⭐ ⭐ ⭐ ⭐</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, fugiat.consectetur adipisicing elit. Nulla, fugiat.</p>
+            <a href="#" class="apply-btn">Apply Online</a>
+          </div>
+        </div>
+      </section>
+      
+       <!-- Modal Background -->
+<div id="formModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <!-- Registration Form -->
+    <form class="register-form">
+      <h2>Create an account</h2>
+      <div class="form-row">
+        <label>First Name</label>
+        <input type="text" placeholder="First Name" required>
+        <label>Last Name</label>
+        <input type="text" placeholder="Last Name" required>
+        <label>Age</label>
+        <input type="number" placeholder="Age" min="18" max="100" required>
+      </div>
+      <div class="form-row">
+          <label>mobile Number</label>
+        <input type="text" placeholder="Mobile Number" required>
+        <label>Email</label>
+        <input type="email" placeholder="Email" required>
+      </div>
+      <div class="form-row">
+          <label>Description</label>
+        <textarea placeholder="Description (max 150 characters)" maxlength="150"></textarea>
+      </div>
+      <div class="form-row">
+          <label>Password</label>
+        <input type="password" placeholder="Password" required>
+        <label>Confirm Password</label>
+        <input type="password" placeholder="Confirm Password" required>
+      </div>
+      <div class="form-row">
+        <button type="reset">RESET</button>
+        <button type="submit">SUBMIT</button>
+      </div>
+    </form>
+  </div>
+  </div>
+
+      <div class="card-container">
+        <!-- Card 1 -->
+        <div class="card">
+          <div class="card-header">Data Science</div>
+          <h3>Cras ultricies lacus consectetur, consectetur</h3>
+          <div class="stars">⭐ ⭐ ⭐ ⭐</div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, fugiat.</p>
+          <a href="#" class="apply-btn">Apply Online</a>
+        </div>
+      
+        <!-- Card 2 -->
+        <div class="card">
+          <div class="card-header">AWS</div>
+          <h3>Cras ultricies lacus consectetur, consectetur</h3>
+          <div class="stars">⭐ ⭐ ⭐ ⭐ ⭐</div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, fugiat.</p>
+          <a href="#" class="apply-btn">Apply Online</a>
+        </div>
+      
+        <!-- Card 3 -->
+        <div class="card">
+          <div class="card-header">Devops</div>
+          <h3>Cras ultricies lacus consectetur, consectetur</h3>
+          <div class="stars">⭐ ⭐ ⭐ ⭐</div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, fugiat.</p>
+          <a href="#" class="apply-btn">Apply Online</a>
+        </div>
+      </div>
+
+
+ 
+  
+  <footer class="footer">
+    <div class="footer-section">
+        <h3><i class="fas fa-graduation-cap"></i> RJ Technology</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, quae pariatur, aspernatur ab necessitatibus optio dolore doloremque nisi est, ad labore perferendis sapiente animi voluptatum? Veritatis mollitia distinctio eveniet quaerat.</p>
+    </div>
+
+    <div class="footer-section">
+        <h3>Our Services</h3>
+        <ul class="services-list">
+            <li>Mobile Application Design</li>
+            <li>Web Application Design</li>
+            <li>Websites Design</li>
+            <li>Web User Interface Design</li>
+            <li>Web UX Design and Research</li>
+            <li>Theme Development Design</li>
+        </ul>
+    </div>
+
+    <div class="footer-section">
+        <h3>Head Office</h3>
+        <p>1/2, Marathahalli, Bengaluru<br>Karnataka-560037,</p>
+        <p>Phone: +91 9025741101</p>
+        <p>Email: rjtechnology@gmail.com</p>
+        <p>Office Time: 10AM - 6PM</p>
+    </div>
+
+    <div class="footer-section">
+        <h3>Subscribe Us</h3>
+        <div class="subscribe-form">
+          <input type="email" class="email-input" placeholder="Enter Email Address">
+          <button class="submit-btn"><i class="fas fa-paper-plane"><img class="img" src="images/sending-icon.png"></i></button>
+      </div>
+      
+      <div class="social-icons">
+          <a href="#" class="social-icon"><i class="fab fa-facebook-f"><img class="img" src="images/facebook-icon.png"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-twitter"><img class="img" src="images/twitter-icon.png"> </i></a>
+          <a href="#" class="social-icon"><i class="fab fa-instagram"><img class="img" src="images/instagram-icon.png"> </i></a>
+          <a href="#" class="social-icon"><i class="fab fa-linkedin-in"><img class="img" src="images/linkedin-icon.png"> </i></a>
+      </div>
+  </div>
+</footer>
+
+      
+</body>
+
+<script src="script.js"></script>
+</html>

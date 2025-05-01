@@ -44,6 +44,18 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
   
+  //instagram
+  document.getElementById("instagram-link").addEventListener("click", function (e) {
+    e.preventDefault(); // Prevents the default "#" behavior
+    window.open("https://www.instagram.com/accounts/login/", "_blank");
+  });
+  
+  //linkedin
+  document.getElementById("linkedin-link").addEventListener("click", function (e) {
+    e.preventDefault(); // Prevent default anchor behavior
+    window.open("https://www.linkedin.com/login", "_blank"); // Open LinkedIn login in a new tab
+  });
+  
   //apply online
   document.addEventListener("DOMContentLoaded", function () {
     const applyBtn = document.querySelector(".apply-button");
@@ -139,13 +151,7 @@ document.addEventListener('DOMContentLoaded', function() {
     window.location.href = "rjtechnology@gmail.com";
 
 
-    
-    
-    
-    
-    
-    
-    
+  
     // if(emailInput.value.trim() === '') {
       //     alert('Please enter your email address');
       //     return;
@@ -175,3 +181,204 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+document.getElementById("facebook-link").addEventListener("click", function (e) {
+  // Optional: track clicks or show a message
+  console.log("Redirecting to Facebook login...");
+  // No need to preventDefault unless you're doing something custom
+});
+
+document.getElementById("twitter-link").addEventListener("click", function () {
+  console.log("Redirecting to Twitter login...");
+});
+
+document.getElementById("instagram-link").addEventListener("click", function () {
+  console.log("Redirecting to Instagram login...");
+});
+
+document.getElementById("linkedin-link").addEventListener("click", function () {
+  console.log("Redirecting to LinkedIn login...");
+});
+
+document.getElementById("gmail-button").addEventListener("click", function () {
+  window.open("https://mail.google.com/mail/u/0/#inbox", "_blank");
+});
+
+// Frontend Course Page Functionality
+document.addEventListener('DOMContentLoaded', function() {
+  // Get the frontend link elements
+  const frontendLinks = document.querySelectorAll('#frontend-link');
+  
+  // Get the frontend course container
+  const frontendCourse = document.getElementById('frontendCourse');
+  
+  // Add click event listeners to all frontend links
+  frontendLinks.forEach(link => {
+      link.addEventListener('click', function(e) {
+          e.preventDefault();
+          
+          // Show the frontend course container
+          frontendCourse.classList.add('active');
+          
+          // Scroll to the frontend course container
+          frontendCourse.scrollIntoView({ behavior: 'smooth' });
+      });
+  });
+  
+  // Optional: Add event listener for the "Back" button if you want to add one
+  // This would hide the course page and show the main content again
+  const addBackButton = () => {
+      // Create a back button element
+      const backButton = document.createElement('button');
+      backButton.textContent = 'Back to Homepage';
+      backButton.className = 'back-button';
+      backButton.style.cssText = 'margin: 20px 0; padding: 8px 16px; background-color: #333; color: white; border: none; border-radius: 5px; cursor: pointer;';
+      
+      // Insert it at the top of the course container
+      frontendCourse.insertBefore(backButton, frontendCourse.firstChild);
+      
+      // Add click event listener
+      backButton.addEventListener('click', function() {
+          // Hide the frontend course container
+          frontendCourse.classList.remove('active');
+      });
+  };
+  
+  // Uncomment the line below if you want to add a back button
+  // addBackButton();
+});
+
+
+       
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  // Handle dropdown menu toggle
+  const coursesToggle = document.getElementById('courses-toggle');
+  const coursesMenu = document.getElementById('courses-menu');
+  
+  // Toggle dropdown when clicking on Courses
+  if(coursesToggle) {
+      coursesToggle.addEventListener('click', function(e) {
+          e.preventDefault();
+          coursesMenu.classList.toggle('show');
+      });
+  }
+  
+  // Close dropdown when clicking outside
+  document.addEventListener('click', function(e) {
+      if(!e.target.matches('#courses-toggle') && !coursesMenu.contains(e.target)) {
+          coursesMenu.classList.remove('show');
+      }
+  });
+  
+  // Frontend course page functionality
+  const frontendLink = document.getElementById('frontend-link');
+  const frontendCourse = document.getElementById('frontendCourse');
+  const mainContent = document.querySelectorAll('section');
+  
+  // Initially hide the frontend course page
+  if(frontendCourse) {
+      frontendCourse.style.display = 'none';
+  }
+  
+  // Show frontend course page when clicking on Frontend link
+  if(frontendLink) {
+      frontendLink.addEventListener('click', function(e) {
+          e.preventDefault();
+          
+          // Hide all main sections
+          mainContent.forEach(section => {
+              section.style.display = 'none';
+          });
+          
+          // Hide dropdown menu
+          coursesMenu.classList.remove('show');
+          
+          // Show frontend course page
+          if(frontendCourse) {
+              frontendCourse.style.display = 'block';
+              // Scroll to the top of the page
+              window.scrollTo(0, 0);
+          }
+      });
+  }
+  
+  // Add back button functionality to return to home page
+  const backToHome = document.createElement('button');
+  backToHome.textContent = 'Back to Home';
+  backToHome.className = 'back-to-home-btn';
+  backToHome.style.margin = '20px';
+  backToHome.style.padding = '10px 15px';
+  backToHome.style.backgroundColor = '#4CAF50';
+  backToHome.style.color = 'white';
+  backToHome.style.border = 'none';
+  backToHome.style.borderRadius = '5px';
+  backToHome.style.cursor = 'pointer';
+  
+  if(frontendCourse) {
+      frontendCourse.prepend(backToHome);
+  }
+  
+  backToHome.addEventListener('click', function() {
+      // Hide frontend course page
+      frontendCourse.style.display = 'none';
+      
+      // Show all main sections again
+      mainContent.forEach(section => {
+          section.style.display = '';
+      });
+  });
+  
+  // Enquiry popup functionality
+  const enquiryButton = document.querySelector('.enquiry-button');
+  const enquiryForm = document.querySelector('.enquiry-form');
+  
+  if(enquiryButton && enquiryForm) {
+      enquiryButton.addEventListener('click', function() {
+          enquiryForm.classList.toggle('show-form');
+      });
+      
+      // Close when clicking outside
+      document.addEventListener('click', function(e) {
+          if(!enquiryButton.contains(e.target) && !enquiryForm.contains(e.target)) {
+              enquiryForm.classList.remove('show-form');
+          }
+      });
+  }
+  
+  // Modal popup for Apply Online buttons
+  const applyButtons = document.querySelectorAll('.apply-button, .apply-btn');
+  const formModal = document.getElementById('formModal');
+  const closeBtn = document.querySelector('#formModal .close-btn');
+  
+  applyButtons.forEach(button => {
+      button.addEventListener('click', function() {
+          if(formModal) {
+              formModal.style.display = 'flex';
+          }
+      });
+  });
+  
+  if(closeBtn && formModal) {
+      closeBtn.addEventListener('click', function() {
+          formModal.style.display = 'none';
+      });
+      
+      // Close when clicking outside
+      window.addEventListener('click', function(e) {
+          if(e.target === formModal) {
+              formModal.style.display = 'none';
+          }
+      });
+  }
+  
+  // Quick Enquiry popup
+  const enquiryPopup = document.getElementById('enquiry-popup');
+  const closePopup = document.getElementById('close-popup');
+  
+  if(closePopup && enquiryPopup) {
+      closePopup.addEventListener('click', function() {
+          enquiryPopup.style.display = 'none';
+      });
+  }
+});

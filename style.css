@@ -988,3 +988,143 @@ body, html {
   }
 }
 
+
+/* Frontend Course Page Styles */
+.course-container {
+  display: none;
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+.course-container.active {
+  display: block;
+}
+
+.course-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.course-title {
+  color: #ffa500;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.course-actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.enroll-btn {
+  background-color: #ffa500;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.enroll-btn::before {
+  content: "+";
+  margin-right: 5px;
+  font-weight: bold;
+}
+
+.tech-btn {
+  background-color: #344a7e;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.batches-btn {
+  background-color: #ffa500;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.batches-btn::before {
+  content: "👁 ";
+  margin-right: 5px;
+}
+
+.course-info-box {
+  background-color: white;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.info-title {
+  color: #ffa500;
+  margin-bottom: 15px;
+}
+
+.course-info-box ul {
+  padding-left: 20px;
+}
+
+.course-info-box li {
+  margin-bottom: 10px;
+  list-style-type: disc;
+}
+
+/* Hide the hero section, features, courses, and cards when course page is active */
+.course-container.active ~ .hero,
+.course-container.active ~ .features,
+.course-container.active ~ .courses,
+.course-container.active ~ .card-container {
+  display: none;
+}
+
+/**/
+
+.course-section {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 20px 30px;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+h2 {
+  color: #f39c12;
+  margin-top: 0;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.tech-category {
+  background-color: #f39c12;
+  color: white;
+  padding: 15px 20px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer; 
+}

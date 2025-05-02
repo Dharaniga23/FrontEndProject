@@ -159,7 +159,7 @@ body {
     margin-bottom: 30px;
 }
 
-.apply-button {
+.apply-online {
     background-color: #00b894;
     color: rgb(252, 250, 250);
     border: none;
@@ -170,7 +170,7 @@ body {
     font-weight: bold;
 }
 
-.apply-button:hover{
+.apply-online:hover{
     color: rgb(233, 75, 75);
 }
 
@@ -1122,9 +1122,28 @@ li {
 .tech-category {
   background-color: #f39c12;
   color: white;
-  padding: 15px 20px;
+  padding: 8px;
   margin-bottom: 10px;
+  margin-top: 10px;
   border-radius: 4px;
   font-weight: bold;
   cursor: pointer; 
+}
+/*tech category*/
+.tech-description {
+  display: none;
+  max-height: 100px;
+  overflow-y: auto;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #f2f2f2;
+  border-left: 4px solid #007bff;
+  border-radius: 5px;
+}
+
+.tech-category {
+  
+  padding: 8px;
+  
+  border-radius: 4px;
 }

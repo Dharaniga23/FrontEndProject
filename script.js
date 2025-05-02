@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
   
   //apply online
   document.addEventListener("DOMContentLoaded", function () {
-    const applyBtn = document.querySelector(".apply-button");
+    const applyBtn = document.querySelector(".apply-online");
     const popup = document.getElementById("enquiry-popup");
     const closeBtn = document.getElementById("close-popup");
   
@@ -382,3 +382,24 @@ document.addEventListener('DOMContentLoaded', function() {
       });
   }
 });
+
+//tech category 
+document.querySelectorAll('.tech-category').forEach((category) => {
+  category.addEventListener('click', function () {
+    const description = this.nextElementSibling;
+
+    // Toggle visibility
+    if (description.style.display === 'block') {
+      description.style.display = 'none';
+    } else {
+      // Hide others first
+      document.querySelectorAll('.tech-description').forEach((desc) => {
+        desc.style.display = 'none';
+      });
+
+      description.style.display = 'block';
+      description.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+

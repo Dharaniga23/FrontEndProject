@@ -1129,7 +1129,7 @@ li {
   font-weight: bold;
   cursor: pointer; 
 }
-/*tech category*/
+
 .tech-description {
   display: none;
   max-height: 100px;
@@ -1141,9 +1141,3 @@ li {
   border-radius: 5px;
 }
 
-.tech-category {
-  
-  padding: 8px;
-  
-  border-radius: 4px;
-}
